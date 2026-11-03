@@ -60,9 +60,10 @@ p{margin:0;font-size:clamp(16px,2.1vw,19px);line-height:1.42;max-width:62ch;text
 figure{margin:0}
 figcaption{font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--mute);padding-top:8px}
 
-/* photo rows: vertical stills, equal width, never cropped */
-.row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
-.row.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+/* stills: full 16:9 film frames, never cropped; full width or an equal pair */
+.full{width:100%;max-width:1120px;margin:0 auto}
+.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (max-width:599px){.pair{grid-template-columns:minmax(0,1fr)}}
 
 /* hero */
 .hero{padding-block:8px 32px}
@@ -94,6 +95,8 @@ figcaption{font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--mute)
 /* pillars: label column + text */
 .pillars{display:grid;gap:18px;margin:0}
 .pillars div{border-top:1px solid var(--line);padding-top:12px;display:grid;grid-template-columns:96px minmax(0,1fr);gap:12px}
+.pillars figure{grid-column:1 / -1}
+@media (min-width:760px){.pillars div{grid-template-columns:120px minmax(0,1fr) minmax(0,320px);gap:20px}.pillars figure{grid-column:auto}}
 .pillars dt{font-size:12px;font-weight:600;letter-spacing:.16em;color:var(--red);padding-top:3px}
 .pillars dd{margin:0;font-size:16px;line-height:1.38}
 .pillars dd .small{display:block;padding-top:6px}
@@ -169,7 +172,7 @@ footer{display:flex;justify-content:space-between;gap:16px;font-size:12px;font-w
   section{padding-block:96px 16px}
   .stack{gap:30px}
   .split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:end}
-  .row{gap:16px}
+  .pair{gap:16px}
   .bar{font-size:13px;padding-top:18px;padding-bottom:16px}
 }
 </style>
@@ -186,12 +189,8 @@ footer{display:flex;justify-content:space-between;gap:16px;font-size:12px;font-w
 
 <!-- HERO -->
 <div class="hero" data-ch="Reels strategy">
-  <div class="wrap stack" style="padding-top:8px">
-    <div class="row">
-      <figure><img src="img/r01.jpg" width="720" height="1280" alt="Женщина в больших тёмных очках и розовой полосатой рубашке на фоне зелени"></figure>
-      <figure><img src="img/r02.jpg" width="720" height="1280" alt="Девушка в очках и лиловой полосатой рубашке, ветер в волосах"></figure>
-      <figure><img src="img/r04.jpg" width="720" height="1280" alt="Мужчина в очках и красной полосатой пижаме на террасе"></figure>
-    </div>
+  <figure class="full"><img src="img/r01.jpg" width="1600" height="900" alt="Пара в розовых полосатых пижамах на шезлонге у бассейна"></figure>
+  <div class="wrap stack" style="padding-top:22px">
     <h1 class="mark">Reels<br>Strategy</h1>
     <div class="hero-meta"><span>150 роликов<br><b>Instagram + TikTok</b></span><span class="red" style="text-align:right">9.11.2026 —<br>10.05.2027</span></div>
     <a class="scroll" href="#decision"><i></i>Scroll</a>
@@ -210,6 +209,7 @@ footer{display:flex;justify-content:space-between;gap:16px;font-size:12px;font-w
       <div><dt>TikTok</dt><dd><b>150</b>все ролики, отдельный аккаунт без ограничения по частоте</dd></div>
       <div><dt>Не меняется</dt><dd>Без скидок, FOMO, танцев и трендовых звуков. Растём за счёт частоты и хуков, а не стиля</dd></div>
     </dl>
+    <figure class="rv"><img src="img/r02.jpg" width="1600" height="900" alt="Дом у озера и бассейн, люди в светлых пижамах на террасе"><figcaption>Дом у озера, лето 2026</figcaption></figure>
   </div>
 </section>
 
@@ -218,6 +218,10 @@ footer{display:flex;justify-content:space-between;gap:16px;font-size:12px;font-w
   <div class="wrap stack">
     <div class="eyebrow rv">02 <span>Как ранжируют платформы</span></div>
     <h2 class="rv">Удержание и пересылки, а не подписчики</h2>
+    <div class="pair rv">
+      <figure><img src="img/r04.jpg" width="1600" height="900" alt="Пара в полосатых рубашках с большим букетом цветов"></figure>
+      <figure><img src="img/r09.jpg" width="1600" height="900" alt="Девушка в лиловой полосатой рубашке среди зелени"></figure>
+    </div>
     <p class="rv">Глава Instagram Адам Моссери назвал три главных сигнала: время просмотра, лайки и пересылки на охват. Свежих официальных изменений в 2026 нет; цифры «весов» из блогов не подтверждены, мы их не используем.</p>
     <ul class="angles rv">
       <li><span class="tag">Время просмотра и досмотр</span><h3>Хук за 3 секунды</h3><p>Главный сигнал на обеих платформах. Ролики 12–20 с, финал похож на первый кадр — ролик зацикливается.</p></li>
@@ -245,6 +249,7 @@ footer{display:flex;justify-content:space-between;gap:16px;font-size:12px;font-w
       <div><dt>Профиль, ссылка, Direct</dt><dd>Считаем по неделям, цель после базы</dd></div>
       <div><dt>Заказы и бутики</dt><dd>В каждом заказе спрашиваем «как вы нас нашли»</dd></div>
     </dl>
+    <figure class="rv"><img src="img/r08.jpg" width="1600" height="900" alt="Девушка в полосатом костюме идёт по газону к озеру"></figure>
   </div>
 </section>
 
@@ -255,11 +260,11 @@ footer{display:flex;justify-content:space-between;gap:16px;font-size:12px;font-w
     <h2 class="rv">Пять рубрик на 150 роликов</h2>
     <p class="rv">Рубрики продолжают столпы годового плана. Каждые 4 недели доли сдвигаем к тому, что даёт пересылки и подписки.</p>
     <dl class="pillars rv">
-      <div><dt>40 · Настроение</dt><dd>Дом у озера, бассейн, качели, сад; голос бренда и стихи.<span class="small">Хук: <span class="keep">“some summers are worn slowly”</span> · на пересылки и пересмотры</span></dd></div>
-      <div><dt>30 · Ткань</dt><dd>Крупно ткань, вышивка «people first», номер и карточка подлинности, ателье.<span class="small">Хук: «Зачем рубашке номер?» · на сохранения и доверие к цене €180–450</span></dd></div>
-      <div><dt>30 · Закулисье</dt><dd>Живой звук со съёмок, реплики режиссёра, смех, примерки — как Vi2.<span class="small">Хук: «что, если красиво выглядит, значит скотина?» · на комментарии и подписки</span></dd></div>
-      <div><dt>25 · Как носить</dt><dd>Одна рубашка — три образа; рубашка отдельно от брюк; разные фигуры и возрасты.<span class="small">Хук: «3 способа носить полосатую рубашку» · на сохранения и поиск</span></dd></div>
-      <div><dt>25 · Продукт</dt><dd>Костюмы, зипы, пуховики, подарочная Signature, бутики, пресса.<span class="small">Хук: «Подарок с номером из тиража» · на визиты профиля и Direct</span></dd></div>
+      <div><dt>40 · Настроение</dt><dd>Дом у озера, бассейн, качели, сад; голос бренда и стихи.<span class="small">Хук: <span class="keep">“some summers are worn slowly”</span> · на пересылки и пересмотры</span></dd><figure><img src="img/r06.jpg" width="1600" height="900" alt="Пара в льняных костюмах и кепках на качелях у озера" loading="lazy"></figure></div>
+      <div><dt>30 · Ткань</dt><dd>Крупно ткань, вышивка «people first», номер и карточка подлинности, ателье.<span class="small">Хук: «Зачем рубашке номер?» · на сохранения и доверие к цене €180–450</span></dd><figure><img src="img/r14.jpg" width="1600" height="900" alt="Солнцезащитные очки и украшения, разложенные на столе" loading="lazy"></figure></div>
+      <div><dt>30 · Закулисье</dt><dd>Живой звук со съёмок, реплики режиссёра, смех, примерки — как Vi2.<span class="small">Хук: «что, если красиво выглядит, значит скотина?» · на комментарии и подписки</span></dd><figure><img src="img/r12.jpg" width="1600" height="900" alt="Трое в светлых льняных вещах на диване в гостиной" loading="lazy"></figure></div>
+      <div><dt>25 · Как носить</dt><dd>Одна рубашка — три образа; рубашка отдельно от брюк; разные фигуры и возрасты.<span class="small">Хук: «3 способа носить полосатую рубашку» · на сохранения и поиск</span></dd><figure><img src="img/r07.jpg" width="1600" height="900" alt="Двое в бежевых льняных костюмах на газоне" loading="lazy"></figure></div>
+      <div><dt>25 · Продукт</dt><dd>Костюмы, зипы, пуховики, подарочная Signature, бутики, пресса.<span class="small">Хук: «Подарок с номером из тиража» · на визиты профиля и Direct</span></dd><figure><img src="img/r03.jpg" width="1600" height="900" alt="Пара в красных полосатых пижамах на террасе" loading="lazy"></figure></div>
     </dl>
     <p class="small rv">Основатели — Соня и Иван — по 1 ролику в месяц внутри рубрик «Ткань» и «Закулисье». Для этого нужна отдельная запись голоса или кадра.</p>
   </div>
@@ -270,6 +275,7 @@ footer{display:flex;justify-content:space-between;gap:16px;font-size:12px;font-w
   <div class="wrap stack">
     <div class="eyebrow rv">05 <span>Формула ролика</span></div>
     <h2 class="rv">Наша эстетика плюс хук</h2>
+    <figure class="rv"><img src="img/r11.jpg" width="1600" height="900" alt="Женщина в коричневом костюме у окна с деревянными жалюзи" loading="lazy"></figure>
     <p class="rv">Плёночный цвет, зерно, голос бренда и жёлтые титры остаются. Новое — титр-хук белой антиквой вверху кадра в первые 2 секунды. Финал — только логотип People First поверх кадра, без надписи.</p>
     <div class="beats rv">
       <div><div class="t">0–1,5 с</div><div class="h">Хук</div><p>Лицо или движение, титр-хук до 6 слов, первая фраза голоса или живая реплика — одновременно.</p></div>
@@ -322,6 +328,10 @@ footer{display:flex;justify-content:space-between;gap:16px;font-size:12px;font-w
   <div class="wrap stack">
     <div class="eyebrow rv">07 <span>Частота и время</span></div>
     <div class="big rv"><span class="n">6</span><p>роликов в неделю: каждый в TikTok и Instagram в один день,<br>2 — в ленту, 4 — как Trial Reels</p></div>
+    <div class="pair rv">
+      <figure><img src="img/r13.jpg" width="1600" height="900" alt="Девушка в шёлковом платке с бокалом шампанского в кресле" loading="lazy"></figure>
+      <figure><img src="img/r15.jpg" width="1600" height="900" alt="Девушка в кепке и светлом костюме лежит на полу у красного комода" loading="lazy"></figure>
+    </div>
     <div class="tscroll rv"><table>
       <thead><tr><th>День</th><th>Время, Рига / Киев</th><th>Рубрика</th><th>Instagram</th><th>TikTok</th></tr></thead>
       <tbody>
@@ -348,6 +358,7 @@ footer{display:flex;justify-content:space-between;gap:16px;font-size:12px;font-w
   <div class="wrap stack">
     <div class="eyebrow rv">08 <span>Дорожная карта</span></div>
     <h2 class="rv">Четыре фазы, три разбора</h2>
+    <figure class="rv"><img src="img/r10.jpg" width="1600" height="900" alt="Девушка в бандане с корзиной цветов у белой стены" loading="lazy"></figure>
     <div class="phases rv">
       <div class="phase now"><span class="small">Нед. 1–4 · сейчас</span><span class="num">24</span><h3>Тест</h3><p>9 ноя — 6 дек. Проверяем хуки и рубрики. Запуски: костюмы, куртки, зипы.</p></div>
       <div class="phase"><span class="small">Нед. 5–8</span><span class="num r">24</span><h3>Подарки</h3><p>7 дек — 3 янв. Signature с номером как подарок. Пуховики, новогодняя кампания.</p></div>
@@ -418,10 +429,7 @@ footer{display:flex;justify-content:space-between;gap:16px;font-size:12px;font-w
   <div class="wrap stack">
     <div class="eyebrow rv">10 <span>Производство</span></div>
     <h2 class="rv">105 из архива, 45 с новой съёмки</h2>
-    <div class="row two rv">
-      <figure><img src="img/r05.jpg" width="720" height="1280" alt="Плёнка Kodak, камеры и объективы на столе"><figcaption>Ткань и ремесло</figcaption></figure>
-      <figure><img src="img/r06.jpg" width="720" height="1280" alt="Чёрно-белый крупный план девушки в прозрачных очках"><figcaption>Портретная сессия</figcaption></figure>
-    </div>
+    <figure class="rv"><img src="img/r16.jpg" width="1600" height="900" alt="Мужчина в светлом костюме на белом диване, рядом рыжая собака" loading="lazy"></figure>
     <div class="tscroll rv"><table>
       <thead><tr><th>Источник</th><th>Роликов</th><th>Что делаем</th></tr></thead>
       <tbody>
@@ -505,12 +513,7 @@ footer{display:flex;justify-content:space-between;gap:16px;font-size:12px;font-w
 </section>
 
 <div class="wrap end" data-ch="People First">
-  <div class="row rv">
-    <figure><img src="img/r03.jpg" width="720" height="1280" alt="Льняные брюки и босые ноги у деревянных качелей на траве"></figure>
-    <figure><img src="img/r02.jpg" width="720" height="1280" alt="Девушка в лиловой полосатой рубашке"></figure>
-    <figure><img src="img/r01.jpg" width="720" height="1280" alt="Женщина в тёмных очках и полосатой рубашке"></figure>
-  </div>
-  <p class="mark rv" style="padding-top:28px">People<br>First</p>
+  <p class="mark rv">People<br>First</p>
   <footer><span>Reels strategy · v1</span><span>03.11.2026</span></footer>
 </div>
 
