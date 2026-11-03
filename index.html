@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="People First — стратегия Reels и TikTok: 150 роликов за 26 недель, ноябрь 2026 — май 2027.">
+<meta property="og:title" content="People First — Reels &amp; TikTok Strategy">
+<meta property="og:description" content="150 роликов за 26 недель. Instagram и TikTok.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/r01.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>:root{padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}body{margin:0}</style>
+<title>People First Reels Strategy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800;900&display=swap">
+<style>
+/* Same system as the press kit: one editorial column, paper + ink + red, capitalised text, rules between blocks. */
+:root{
+  --paper:#F2F0EC;
+  --ink:#121212;
+  --red:#C8261C;
+  --mute:#5F5B55;
+  --line:#121212;
+  --soft:#E4E1DB;
+  --display:"Archivo","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --body:"Archivo","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --gut:max(16px, env(safe-area-inset-left, 0px));
+  --gutR:max(16px, env(safe-area-inset-right, 0px));
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);text-transform:uppercase;font-size:16px;line-height:1.4;letter-spacing:.02em;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+img{max-width:100%;height:auto;display:block}
+b,strong{font-weight:800}
+.red{color:var(--red)}
+.keep{text-transform:none}
+
+/* header */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--paper);padding:14px var(--gutR) 12px var(--gut);display:flex;justify-content:space-between;align-items:baseline;font-size:12px;font-weight:600;letter-spacing:.16em}
+.bar a{color:inherit;text-decoration:none}
+.bar .ch{color:var(--red);transition:opacity .3s}
+.prog{position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--red);transform-origin:0 50%;transform:scaleX(0)}
+
+/* blocks */
+.wrap{max-width:1120px;margin:0 auto;padding-left:var(--gut);padding-right:var(--gutR)}
+section{padding-block:56px 8px}
+.stack{display:flex;flex-direction:column;gap:22px}
+.stack>*{min-width:0;max-width:100%}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.16em;color:var(--red);display:flex;gap:14px;align-items:baseline}
+.eyebrow span{color:var(--ink)}
+h1,h2,h3{margin:0;font-family:var(--display);font-weight:800;letter-spacing:-.025em;line-height:.95;text-wrap:balance}
+h2{font-size:clamp(34px,8.4vw,76px)}
+h3{font-size:clamp(22px,4.6vw,32px);letter-spacing:-.015em;line-height:1}
+p{margin:0;font-size:clamp(16px,2.1vw,19px);line-height:1.42;max-width:62ch;text-wrap:pretty}
+.small{font-size:13px;font-weight:500;letter-spacing:.14em;color:var(--mute)}
+.rule{border-top:1px solid var(--line);padding-top:12px}
+figure{margin:0}
+figcaption{font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--mute);padding-top:8px}
+
+/* photo rows: vertical stills, equal width, never cropped */
+.row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.row.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+
+/* hero */
+.hero{padding-block:8px 32px}
+.mark{font-family:var(--display);font-weight:900;font-size:clamp(48px,16vw,210px);line-height:.82;letter-spacing:-.055em;margin:0}
+.hero-meta{display:flex;justify-content:space-between;gap:24px;font-size:13px;font-weight:600;letter-spacing:.14em}
+.scroll{display:inline-flex;gap:10px;align-items:center;font-size:12px;font-weight:600;letter-spacing:.18em;color:var(--red);text-decoration:none}
+.scroll i{display:block;width:1px;height:28px;background:var(--red);animation:drop 1.8s ease-in-out infinite}
+@keyframes drop{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* statement + quote */
+.statement{font-family:var(--display);font-weight:800;font-size:clamp(30px,6.6vw,60px);line-height:1;letter-spacing:-.025em;margin:0;text-wrap:balance}
+.statement em{font-style:normal;font-weight:300}
+.quote{font-size:clamp(20px,3.6vw,30px);font-weight:300;line-height:1.18;letter-spacing:-.005em;margin:0;text-wrap:balance}
+.quote b{font-weight:800}
+
+/* facts */
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 18px;margin:0}
+.facts div{border-top:1px solid var(--line);padding-top:10px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.facts dt{font-size:12px;font-weight:600;letter-spacing:.16em;color:var(--red)}
+.facts dd{margin:0;font-size:15px;line-height:1.3}
+.facts dd b{font-family:var(--display);font-weight:900;font-size:clamp(34px,6vw,52px);letter-spacing:-.04em;line-height:.9;display:block}
+@media (min-width:760px){.facts{grid-template-columns:repeat(4,minmax(0,1fr))}.facts.three{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* big number */
+.big{display:flex;align-items:flex-end;gap:18px;flex-wrap:wrap}
+.big .n{font-family:var(--display);font-weight:900;font-size:clamp(96px,26vw,220px);line-height:.78;letter-spacing:-.06em;color:var(--red)}
+.big p{font-size:16px;padding-bottom:4px}
+
+/* pillars: label column + text */
+.pillars{display:grid;gap:18px;margin:0}
+.pillars div{border-top:1px solid var(--line);padding-top:12px;display:grid;grid-template-columns:96px minmax(0,1fr);gap:12px}
+.pillars dt{font-size:12px;font-weight:600;letter-spacing:.16em;color:var(--red);padding-top:3px}
+.pillars dd{margin:0;font-size:16px;line-height:1.38}
+.pillars dd .small{display:block;padding-top:6px}
+
+/* angles: a ruled list */
+.angles{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.angles li{border-top:1px solid var(--line);padding:14px 0;display:flex;flex-direction:column;gap:6px}
+.angles li:last-child{border-bottom:1px solid var(--line)}
+.angles h3{font-size:clamp(22px,4.4vw,34px)}
+.angles p{font-size:15px;color:var(--mute)}
+.angles .tag{font-size:12px;font-weight:600;letter-spacing:.16em;color:var(--red)}
+
+/* tables */
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-inline:calc(-1 * var(--gut));padding-inline:var(--gut)}
+table{width:100%;border-collapse:collapse;font-size:13px;line-height:1.32;letter-spacing:.04em}
+th{font-size:11px;font-weight:600;letter-spacing:.16em;color:var(--red);text-align:left;padding:0 12px 8px 0;vertical-align:bottom;white-space:nowrap}
+td{border-top:1px solid var(--line);padding:9px 12px 9px 0;vertical-align:top}
+tbody tr:last-child td{border-bottom:1px solid var(--line)}
+td.n{font-weight:800;white-space:nowrap}
+td .q{text-transform:none;font-style:italic;letter-spacing:0}
+tr.wk td{border-top:2px solid var(--line)}
+.cal{min-width:820px}
+.chip{display:inline-block;border:1px solid var(--ink);padding:3px 6px 2px;font-size:11px;font-weight:600;letter-spacing:.12em;white-space:nowrap}
+.chip.red{border-color:var(--red);color:var(--red)}
+.chip.fill{background:var(--ink);color:var(--paper)}
+
+/* reel timeline */
+.beats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;border-top:2px solid var(--line)}
+.beats div{padding:12px 12px 4px 0;border-right:1px solid var(--soft);min-width:0}
+.beats div:last-child{border-right:0}
+.beats .t{font-family:var(--display);font-weight:900;font-size:clamp(20px,3.4vw,30px);letter-spacing:-.03em;line-height:1;color:var(--red)}
+.beats .h{font-size:13px;font-weight:800;letter-spacing:.12em;padding-top:8px}
+.beats p{font-size:13px;line-height:1.35;padding-top:6px;color:var(--mute)}
+@media (max-width:759px){.beats{grid-template-columns:minmax(0,1fr)}.beats div{border-right:0;border-bottom:1px solid var(--soft);padding-bottom:12px}}
+
+/* roadmap */
+.phases{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.phase{border:1px solid var(--ink);padding:14px 12px 16px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.phase.now{background:var(--ink);color:var(--paper)}
+.phase.now .small{color:#BDB8B0}
+.phase .num{font-family:var(--display);font-weight:900;font-size:clamp(40px,7vw,64px);letter-spacing:-.05em;line-height:.85}
+.phase.now .num{color:var(--paper)}
+.phase .num.r{color:var(--red)}
+.phase h3{font-size:clamp(20px,2.6vw,26px)}
+.phase p{font-size:14px;line-height:1.32}
+.gates{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;padding-top:14px;border-top:2px solid var(--red);margin-top:8px}
+.gates div{font-size:13px;font-weight:600;letter-spacing:.12em}
+.gates div span{display:block;color:var(--mute);font-weight:500;padding-top:4px}
+@media (max-width:759px){.phases{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.gates{grid-template-columns:minmax(0,1fr)}}
+
+/* checklist */
+.checks{list-style:none;margin:0;padding:0}
+.checks li{border-top:1px solid var(--line);padding:11px 0 11px 30px;position:relative;font-size:15px}
+.checks li:last-child{border-bottom:1px solid var(--line)}
+.checks li::before{content:"";position:absolute;left:0;top:13px;width:14px;height:14px;border:1.5px solid var(--red)}
+
+/* sources */
+.sources{list-style:none;margin:0;padding:0;font-size:13px;letter-spacing:.06em}
+.sources li{border-top:1px solid var(--line);padding:9px 0}
+.sources a{color:var(--ink);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.sources a:hover{color:var(--red)}
+
+.end{padding-block:48px 28px}
+.end .mark{font-size:clamp(56px,20vw,200px)}
+footer{display:flex;justify-content:space-between;gap:16px;font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--mute);padding-top:18px}
+
+/* reveal on scroll: only below the first screen, only when JS runs */
+.js .rv.pre{opacity:0;transform:translateY(26px)}
+.js .rv{transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+@media (prefers-reduced-motion:reduce){.js .rv.pre{opacity:1;transform:none}.js .rv{transition:none}.scroll i{animation:none}html{scroll-behavior:auto}}
+
+@media (min-width:900px){
+  section{padding-block:96px 16px}
+  .stack{gap:30px}
+  .split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:end}
+  .row{gap:16px}
+  .bar{font-size:13px;padding-top:18px;padding-bottom:16px}
+}
+</style>
+</head>
+<body>
+
+<header class="bar" id="top">
+  <a href="#top">People First</a>
+  <span class="ch" id="chapter">Reels strategy</span>
+  <div class="prog" id="prog"></div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<div class="hero" data-ch="Reels strategy">
+  <div class="wrap stack" style="padding-top:8px">
+    <div class="row">
+      <figure><img src="img/r01.jpg" width="720" height="1280" alt="Женщина в больших тёмных очках и розовой полосатой рубашке на фоне зелени"></figure>
+      <figure><img src="img/r02.jpg" width="720" height="1280" alt="Девушка в очках и лиловой полосатой рубашке, ветер в волосах"></figure>
+      <figure><img src="img/r04.jpg" width="720" height="1280" alt="Мужчина в очках и красной полосатой пижаме на террасе"></figure>
+    </div>
+    <h1 class="mark">Reels<br>Strategy</h1>
+    <div class="hero-meta"><span>150 роликов<br><b>Instagram + TikTok</b></span><span class="red" style="text-align:right">9.11.2026 —<br>10.05.2027</span></div>
+    <a class="scroll" href="#decision"><i></i>Scroll</a>
+  </div>
+</div>
+
+<!-- 01 DECISION -->
+<section id="decision" data-ch="01 — Главное решение">
+  <div class="wrap stack">
+    <div class="eyebrow rv">01 <span>Главное решение</span></div>
+    <p class="statement rv">Растим аудиторию через ролики, <em>а лента остаётся тихой</em></p>
+    <p class="rv">150 роликов за 26 недель, около 6 в неделю. Один и тот же чистый файл выходит в Instagram и TikTok в один день. Годовой план ставит потолок 1–2 поста в неделю, поэтому делим работу на два контура.</p>
+    <dl class="facts rv">
+      <div><dt>Витрина</dt><dd><b>1–2</b>ролика в неделю в основной ленте Instagram — самые сильные</dd></div>
+      <div><dt>Охват</dt><dd><b>4–5</b>роликов в неделю через Trial Reels: только новой аудитории, без сетки профиля</dd></div>
+      <div><dt>TikTok</dt><dd><b>150</b>все ролики, отдельный аккаунт без ограничения по частоте</dd></div>
+      <div><dt>Не меняется</dt><dd>Без скидок, FOMO, танцев и трендовых звуков. Растём за счёт частоты и хуков, а не стиля</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- 02 PLATFORMS -->
+<section id="platforms" data-ch="02 — Как ранжируют платформы">
+  <div class="wrap stack">
+    <div class="eyebrow rv">02 <span>Как ранжируют платформы</span></div>
+    <h2 class="rv">Удержание и пересылки, а не подписчики</h2>
+    <p class="rv">Глава Instagram Адам Моссери назвал три главных сигнала: время просмотра, лайки и пересылки на охват. Свежих официальных изменений в 2026 нет; цифры «весов» из блогов не подтверждены, мы их не используем.</p>
+    <ul class="angles rv">
+      <li><span class="tag">Время просмотра и досмотр</span><h3>Хук за 3 секунды</h3><p>Главный сигнал на обеих платформах. Ролики 12–20 с, финал похож на первый кадр — ролик зацикливается.</p></li>
+      <li><span class="tag">Пересылки в Direct</span><h3>Send this to the one you'd share a shirt with</h3><p>Для неподписчиков Instagram это главный сигнал, в TikTok пересылка сильнее лайка. Призыв прямо продолжает идею people first.</p></li>
+      <li><span class="tag">Сохранения</span><h3>Рубрики «как носить» и «ткань»</h3><p>Учитываются на обеих платформах; полезное сохраняют.</p></li>
+      <li><span class="tag">Поиск</span><h3>Ключевая фраза в первой строке</h3><p>TikTok читает подпись, текст в кадре и речь. Пишем словами покупателя: «striped pyjama shirt, Italian deadstock cotton».</p></li>
+      <li><span class="tag">Оригинальность</span><h3>Только чистый мастер-файл</h3><p>Ролики с водяным знаком TikTok Instagram показывает хуже. Загружаем в обе сети файл из нашей папки.</p></li>
+    </ul>
+    <p class="small rv">Число подписчиков в TikTok на показы напрямую не влияет — новый аккаунт может получить охват с первого ролика. Официальной нормы частоты нет ни у одной платформы; для Instagram ориентир 3–5 роликов в неделю.</p>
+  </div>
+</section>
+
+<!-- 03 METRICS -->
+<section id="metrics" data-ch="03 — Цели и метрики">
+  <div class="wrap stack">
+    <div class="eyebrow rv">03 <span>Цели и метрики</span></div>
+    <h2 class="rv">Сначала качество роликов, потом цифры роста</h2>
+    <p class="rv">Цель за 26 недель — подписчики и обращения клиентов и бутиков из роликов. Цели по подписчикам ставим после 4 недель, когда будет база. Ниже — наши рабочие пороги для ролика 12–20 с; через 4 недели заменяем их своей медианой.</p>
+    <dl class="facts rv">
+      <div><dt>Досмотр до 3-й секунды</dt><dd><b>60%+</b>внимание</dd></div>
+      <div><dt>Средний процент просмотра</dt><dd><b>50%+</b>внимание</dd></div>
+      <div><dt>Пересылки на 1000 охвата</dt><dd><b>10+</b>распространение</dd></div>
+      <div><dt>Сохранения на 1000 охвата</dt><dd><b>5+</b>распространение</dd></div>
+      <div><dt>Подписки на 1000 охвата</dt><dd><b>2+</b>рост</dd></div>
+      <div><dt>Профиль, ссылка, Direct</dt><dd>Считаем по неделям, цель после базы</dd></div>
+      <div><dt>Заказы и бутики</dt><dd>В каждом заказе спрашиваем «как вы нас нашли»</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- 04 PILLARS -->
+<section id="pillars" data-ch="04 — Рубрики">
+  <div class="wrap stack">
+    <div class="eyebrow rv">04 <span>Рубрики</span></div>
+    <h2 class="rv">Пять рубрик на 150 роликов</h2>
+    <p class="rv">Рубрики продолжают столпы годового плана. Каждые 4 недели доли сдвигаем к тому, что даёт пересылки и подписки.</p>
+    <dl class="pillars rv">
+      <div><dt>40 · Настроение</dt><dd>Дом у озера, бассейн, качели, сад; голос бренда и стихи.<span class="small">Хук: <span class="keep">“some summers are worn slowly”</span> · на пересылки и пересмотры</span></dd></div>
+      <div><dt>30 · Ткань</dt><dd>Крупно ткань, вышивка «people first», номер и карточка подлинности, ателье.<span class="small">Хук: «Зачем рубашке номер?» · на сохранения и доверие к цене €180–450</span></dd></div>
+      <div><dt>30 · Закулисье</dt><dd>Живой звук со съёмок, реплики режиссёра, смех, примерки — как Vi2.<span class="small">Хук: «что, если красиво выглядит, значит скотина?» · на комментарии и подписки</span></dd></div>
+      <div><dt>25 · Как носить</dt><dd>Одна рубашка — три образа; рубашка отдельно от брюк; разные фигуры и возрасты.<span class="small">Хук: «3 способа носить полосатую рубашку» · на сохранения и поиск</span></dd></div>
+      <div><dt>25 · Продукт</dt><dd>Костюмы, зипы, пуховики, подарочная Signature, бутики, пресса.<span class="small">Хук: «Подарок с номером из тиража» · на визиты профиля и Direct</span></dd></div>
+    </dl>
+    <p class="small rv">Основатели — Соня и Иван — по 1 ролику в месяц внутри рубрик «Ткань» и «Закулисье». Для этого нужна отдельная запись голоса или кадра.</p>
+  </div>
+</section>
+
+<!-- 05 FORMULA -->
+<section id="formula" data-ch="05 — Формула ролика">
+  <div class="wrap stack">
+    <div class="eyebrow rv">05 <span>Формула ролика</span></div>
+    <h2 class="rv">Наша эстетика плюс хук</h2>
+    <p class="rv">Плёночный цвет, зерно, голос бренда и жёлтые титры остаются. Новое — титр-хук белой антиквой вверху кадра в первые 2 секунды. Финал — только логотип People First поверх кадра, без надписи.</p>
+    <div class="beats rv">
+      <div><div class="t">0–1,5 с</div><div class="h">Хук</div><p>Лицо или движение, титр-хук до 6 слов, первая фраза голоса или живая реплика — одновременно.</p></div>
+      <div><div class="t">1,5–3 с</div><div class="h">Зацеп</div><p>2–3 быстрые склейки или фраза, которая ставит вопрос.</p></div>
+      <div><div class="t">3–10 с</div><div class="h">История</div><p>2–3 строки голоса с титрами внизу, планы по 1,2 с.</p></div>
+      <div><div class="t">10–13 с</div><div class="h">Герой</div><p>Длинный план с засветкой: красивое лицо или ткань.</p></div>
+      <div><div class="t">2 с</div><div class="h">Логотип</div><p>Логотип поверх последнего кадра, без текста. Кадр похож на первый — ролик зацикливается.</p></div>
+    </div>
+    <dl class="facts three rv">
+      <div><dt>Длина</dt><dd>12–20 с для рубрик настроения, ткани, стиля, продукта; 20–40 с для закулисья</dd></div>
+      <div><dt>Язык</dt><dd>Английский в голосе и титрах; русская речь со съёмок — с английскими титрами</dd></div>
+      <div><dt>Тесты</dt><dd>Для сильных роликов — вторая версия начала, сравниваем через Trial Reels</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- 06 CAPTIONS -->
+<section id="captions" data-ch="06 — Подписи и хештеги">
+  <div class="wrap stack">
+    <div class="eyebrow rv">06 <span>Подписи и хештеги</span></div>
+    <h2 class="rv">Четыре строки, один призыв</h2>
+    <p class="rv">Ключевая фраза для поиска, одна фраза истории, один призыв и 3–5 хештегов. Текст на английском, одинаковый для обеих сетей; ссылки — только в профиле.</p>
+    <div class="rule rv"><p class="quote keep"><b>Red striped pyjama set, Italian deadstock cotton.</b> His shirt, her sunglasses, a whole afternoon. Send this to the one you'd share a shirt with. #peoplefirst #resortwear #pyjamaset #summerhouse</p></div>
+    <p class="small rv">Пример для ролика 17 «Красные полоски»</p>
+    <div class="tscroll rv"><table>
+      <thead><tr><th>Призыв</th><th>Текст</th><th>Когда</th></tr></thead>
+      <tbody>
+        <tr><td class="n">Переслать</td><td class="keep">Send this to the one you'd share a shirt with.</td><td>Настроение, закулисье</td></tr>
+        <tr><td class="n">Сохранить</td><td class="keep">Save it for your next packing list.</td><td>Как носить, ткань</td></tr>
+        <tr><td class="n">Написать</td><td class="keep">DM us “shirt” for sizes and the story of yours.</td><td>Продукт, Signature</td></tr>
+        <tr><td class="n">Подписаться</td><td class="keep">Follow for the rest of the summer.</td><td>Серии из нескольких частей</td></tr>
+      </tbody>
+    </table></div>
+    <div class="tscroll rv"><table>
+      <thead><tr><th>Хештеги</th><th>Рубрика</th></tr></thead>
+      <tbody>
+        <tr><td class="keep">#peoplefirst #deadstockfabric #italianfabric #slowfashion</td><td>Ткань и ремесло</td></tr>
+        <tr><td class="keep">#peoplefirst #resortwear #pyjamaset #summerhouse</td><td>Настроение</td></tr>
+        <tr><td class="keep">#peoplefirst #shirtstyling #stripedshirt #howtowear</td><td>Как носить</td></tr>
+        <tr><td class="keep">#peoplefirst #behindthescenes #fashionshoot</td><td>Закулисье</td></tr>
+        <tr><td class="keep">#peoplefirst #signatureshirt #numberededition #giftforhim</td><td>Продукт</td></tr>
+      </tbody>
+    </table></div>
+    <p class="small rv">Проверить: свободен ли тег <span class="keep">#peoplefirst</span> от чужого контента; если нет — берём <span class="keep">#pplfrst</span>. Состав ткани в подписи — только подтверждённый.</p>
+  </div>
+</section>
+
+<!-- 07 WEEK -->
+<section id="week" data-ch="07 — Неделя">
+  <div class="wrap stack">
+    <div class="eyebrow rv">07 <span>Частота и время</span></div>
+    <div class="big rv"><span class="n">6</span><p>роликов в неделю: каждый в TikTok и Instagram в один день,<br>2 — в ленту, 4 — как Trial Reels</p></div>
+    <div class="tscroll rv"><table>
+      <thead><tr><th>День</th><th>Время, Рига / Киев</th><th>Рубрика</th><th>Instagram</th><th>TikTok</th></tr></thead>
+      <tbody>
+        <tr><td class="n">Пн</td><td>19:30</td><td>Настроение</td><td><span class="chip">Trial</span></td><td>Да</td></tr>
+        <tr><td class="n">Вт</td><td>12:30</td><td>Ткань и ремесло</td><td><span class="chip fill">Лента</span></td><td>Да</td></tr>
+        <tr><td class="n">Ср</td><td>19:30</td><td>Закулисье</td><td><span class="chip">Trial</span></td><td>Да</td></tr>
+        <tr><td class="n">Чт</td><td>12:30</td><td>Как носить</td><td><span class="chip">Trial</span></td><td>Да</td></tr>
+        <tr><td class="n">Пт</td><td>19:30</td><td>Лучший ролик недели или продукт</td><td><span class="chip fill">Лента</span></td><td>Да</td></tr>
+        <tr><td class="n">Сб</td><td>11:00</td><td>Настроение или продукт</td><td><span class="chip">Trial</span></td><td>Да</td></tr>
+        <tr><td class="n">Вс</td><td>—</td><td>Сторис и разбор недели</td><td>—</td><td>—</td></tr>
+      </tbody>
+    </table></div>
+    <ul class="checks rv">
+      <li>Время — стартовая гипотеза (UTC+2). Через 4 недели берём часы активности из статистики аккаунта</li>
+      <li>Первый час после выхода: отвечаем на все комментарии и ставим ролик в сторис</li>
+      <li>Лучший Trial Reel недели выпускаем в ленту в пятницу</li>
+      <li>Около 1 часа в день на публикацию и ответы; планирование — Meta Business Suite и TikTok Studio</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 08 ROADMAP -->
+<section id="roadmap" data-ch="08 — Дорожная карта">
+  <div class="wrap stack">
+    <div class="eyebrow rv">08 <span>Дорожная карта</span></div>
+    <h2 class="rv">Четыре фазы, три разбора</h2>
+    <div class="phases rv">
+      <div class="phase now"><span class="small">Нед. 1–4 · сейчас</span><span class="num">24</span><h3>Тест</h3><p>9 ноя — 6 дек. Проверяем хуки и рубрики. Запуски: костюмы, куртки, зипы.</p></div>
+      <div class="phase"><span class="small">Нед. 5–8</span><span class="num r">24</span><h3>Подарки</h3><p>7 дек — 3 янв. Signature с номером как подарок. Пуховики, новогодняя кампания.</p></div>
+      <div class="phase"><span class="small">Нед. 9–20</span><span class="num r">72</span><h3>Рост</h3><p>4 янв — 28 мар. Больше того, что сработало. Без дропов: ремесло, закулисье, основатели.</p></div>
+      <div class="phase"><span class="small">Нед. 21–26</span><span class="num r">30</span><h3>Предсезон</h3><p>29 мар — 10 мая. Курортная капсула к сезону. Бутики: «теперь также в…».</p></div>
+    </div>
+    <div class="gates rv">
+      <div>Разбор 4 недель<span>доли рубрик</span></div>
+      <div>Разбор 8 недель<span>частота и время</span></div>
+      <div>Разбор 20 недель<span>форматы на сезон</span></div>
+    </div>
+    <p class="small rv">Запуски товаров — из контент-плана сентябрь–декабрь и годового плана 2026–2027.</p>
+  </div>
+</section>
+
+<!-- 09 CALENDAR -->
+<section id="calendar" data-ch="09 — Календарь 6 недель">
+  <div class="wrap stack">
+    <div class="eyebrow rv">09 <span>Календарь первых 6 недель</span></div>
+    <h2 class="rv">36 роликов, 9 ноября — 19 декабря</h2>
+    <p class="rv">21 уже смонтирован (нужен только титр-хук), 9 собираем из архива, для 6 нужна новая съёмка. Летний материал в ноябре подаём как «лето, которое мы оставили себе» — это работает на зимний эскапизм.</p>
+    <div class="tscroll rv"><table class="cal">
+      <thead><tr><th>№</th><th>Дата</th><th>Рубрика</th><th>Ролик</th><th>Титр-хук</th><th>Instagram</th><th>Статус</th></tr></thead>
+      <tbody>
+        <tr class="wk"><td class="n">1</td><td>Пн 9 ноя</td><td>Настроение</td><td>01 Розовые полоски</td><td><span class="q">the slowest summer we ever wore</span></td><td><span class="chip">Trial</span></td><td>Готов + хук</td></tr>
+        <tr><td class="n">2</td><td>Вт 10 ноя</td><td>Ткань</td><td>06 Детали</td><td><span class="q">the small things first</span></td><td><span class="chip fill">Лента</span></td><td>Готов + хук</td></tr>
+        <tr><td class="n">3</td><td>Ср 11 ноя</td><td>Закулисье</td><td>Vi2 Со съёмки</td><td><span class="q">so if he looks good, he must be a brute?</span></td><td><span class="chip">Trial</span></td><td>Готов</td></tr>
+        <tr><td class="n">4</td><td>Чт 12 ноя</td><td>Как носить</td><td>11 Примерочная</td><td><span class="q">trying it on until it's yours</span></td><td><span class="chip">Trial</span></td><td>Готов + хук</td></tr>
+        <tr><td class="n">5</td><td>Пт 13 ноя</td><td>Продукт</td><td>17 Красные полоски</td><td><span class="q">his shirt, her sunglasses</span></td><td><span class="chip fill">Лента</span></td><td>Готов + хук</td></tr>
+        <tr><td class="n">6</td><td>Сб 14 ноя</td><td>Настроение</td><td>02 Качели у озера</td><td><span class="q">bare feet, linen, one swing</span></td><td><span class="chip">Trial</span></td><td>Готов + хук</td></tr>
+        <tr class="wk"><td class="n">7</td><td>Пн 16 ноя</td><td>Настроение</td><td>07 Лиловый газон</td><td><span class="q">lilac stripes, lake wind</span></td><td><span class="chip">Trial</span></td><td>Готов + хук</td></tr>
+        <tr><td class="n">8</td><td>Вт 17 ноя</td><td>Ткань</td><td>22 Зачем рубашке номер</td><td><span class="q">why does a shirt need a number?</span></td><td><span class="chip fill">Лента</span></td><td class="red">Нужно фото карточки</td></tr>
+        <tr><td class="n">9</td><td>Ср 18 ноя</td><td>Закулисье</td><td>10 Домашнее видео</td><td><span class="q">no crew. just a camera passed around.</span></td><td><span class="chip">Trial</span></td><td>Готов + хук</td></tr>
+        <tr><td class="n">10</td><td>Чт 19 ноя</td><td>Как носить</td><td>23 Одна рубашка — 3 образа</td><td><span class="q">one striped shirt, 3 ways</span></td><td><span class="chip">Trial</span></td><td>Монтаж из архива</td></tr>
+        <tr><td class="n">11</td><td>Пт 20 ноя</td><td>Продукт</td><td>05 Портретная сессия</td><td><span class="q">one shirt, one long afternoon</span></td><td><span class="chip fill">Лента</span></td><td>Готов + хук</td></tr>
+        <tr><td class="n">12</td><td>Сб 21 ноя</td><td>Настроение</td><td>03 Сад и цветы</td><td><span class="q">a garden, kept by hand</span></td><td><span class="chip">Trial</span></td><td>Готов + хук</td></tr>
+        <tr class="wk"><td class="n">13</td><td>Пн 23 ноя</td><td>Настроение</td><td>13 Бассейн, розовый</td><td><span class="q">pink stripes by the water</span></td><td><span class="chip">Trial</span></td><td>Готов + хук</td></tr>
+        <tr><td class="n">14</td><td>Вт 24 ноя</td><td>Ткань</td><td>24 Deadstock — ткань, которой больше нет</td><td><span class="q">fabric no one else will have</span></td><td><span class="chip fill">Лента</span></td><td>Монтаж из архива</td></tr>
+        <tr><td class="n">15</td><td>Ср 25 ноя</td><td>Закулисье</td><td>09 Вместе</td><td><span class="q">people first. then everything else.</span></td><td><span class="chip">Trial</span></td><td>Готов + хук</td></tr>
+        <tr><td class="n">16</td><td>Чт 26 ноя</td><td>Как носить</td><td>25 Рубашка без брюк</td><td><span class="q">the pyjama shirt, worn out</span></td><td><span class="chip">Trial</span></td><td>Монтаж из архива</td></tr>
+        <tr><td class="n">17</td><td>Пт 27 ноя</td><td>Продукт</td><td>30 Костюмы и куртки (74mt, 45mt)</td><td><span class="q">grey wool, one thin red line</span></td><td><span class="chip fill">Лента</span></td><td class="red">Нужна съёмка</td></tr>
+        <tr><td class="n">18</td><td>Сб 28 ноя</td><td>Настроение</td><td>12 Наверху, шляпы</td><td><span class="q">upstairs, after lunch</span></td><td><span class="chip">Trial</span></td><td>Готов + хук</td></tr>
+        <tr class="wk"><td class="n">19</td><td>Пн 30 ноя</td><td>Настроение</td><td>19 Снова озеро</td><td><span class="q">two by two, down to the water</span></td><td><span class="chip">Trial</span></td><td>Готов + хук</td></tr>
+        <tr><td class="n">20</td><td>Вт 1 дек</td><td>Ткань</td><td>27 Основатели: сестра и брат</td><td><span class="q">5 pieces for any occasion</span></td><td><span class="chip fill">Лента</span></td><td class="red">Нужна запись голоса</td></tr>
+        <tr><td class="n">21</td><td>Ср 2 дек</td><td>Закулисье</td><td>15 Огород на мыльницу</td><td><span class="q">lunch, picked by hand</span></td><td><span class="chip">Trial</span></td><td>Готов + хук</td></tr>
+        <tr><td class="n">22</td><td>Чт 3 дек</td><td>Как носить</td><td>28 Льняной костюм: день и вечер</td><td><span class="q">one suit, morning to night</span></td><td><span class="chip">Trial</span></td><td>Монтаж из архива</td></tr>
+        <tr><td class="n">23</td><td>Пт 4 дек</td><td>Продукт</td><td>29 Подарок с номером (Signature)</td><td><span class="q">a gift with a number</span></td><td><span class="chip fill">Лента</span></td><td class="red">Нужна съёмка</td></tr>
+        <tr><td class="n">24</td><td>Сб 5 дек</td><td>Настроение</td><td>08 Кресло и шампанское</td><td><span class="q">champagne, a scarf, a chair</span></td><td><span class="chip">Trial</span></td><td>Готов + хук</td></tr>
+        <tr class="wk"><td class="n">25</td><td>Пн 7 дек</td><td>Настроение</td><td>14 На полу в свете</td><td><span class="q">talking about nothing, for hours</span></td><td><span class="chip">Trial</span></td><td>Готов + хук</td></tr>
+        <tr><td class="n">26</td><td>Вт 8 дек</td><td>Ткань</td><td>32 Почему мы делаем так мало</td><td><span class="q">why we make so few</span></td><td><span class="chip fill">Лента</span></td><td>Монтаж из архива</td></tr>
+        <tr><td class="n">27</td><td>Ср 9 дек</td><td>Закулисье</td><td>33 Примерки и собака</td><td><span class="q">the real star of the shoot</span></td><td><span class="chip">Trial</span></td><td>Монтаж из архива</td></tr>
+        <tr><td class="n">28</td><td>Чт 10 дек</td><td>Как носить</td><td>31 Одна рубашка на троих</td><td><span class="q">same shirt, three people</span></td><td><span class="chip">Trial</span></td><td>Монтаж из архива</td></tr>
+        <tr><td class="n">29</td><td>Пт 11 дек</td><td>Продукт</td><td>34 Зипы и спортивные костюмы</td><td><span class="q">the zip-up, done slowly</span></td><td><span class="chip fill">Лента</span></td><td class="red">Нужна съёмка</td></tr>
+        <tr><td class="n">30</td><td>Сб 12 дек</td><td>Настроение</td><td>16 Длинная гостиная</td><td><span class="q">brown, sand and stone</span></td><td><span class="chip">Trial</span></td><td>Готов + хук</td></tr>
+        <tr class="wk"><td class="n">31</td><td>Пн 14 дек</td><td>Настроение</td><td>18 Кабинет, диван, собака</td><td><span class="q">nothing planned until evening</span></td><td><span class="chip">Trial</span></td><td>Готов + хук</td></tr>
+        <tr><td class="n">32</td><td>Вт 15 дек</td><td>Ткань</td><td>35 Пять вещей на любой случай</td><td><span class="q">five pieces. every occasion.</span></td><td><span class="chip fill">Лента</span></td><td>Монтаж из архива</td></tr>
+        <tr><td class="n">33</td><td>Ср 16 дек</td><td>Закулисье</td><td>26 Зарядить плёнку</td><td><span class="q">loading the film</span></td><td><span class="chip">Trial</span></td><td>Монтаж из архива</td></tr>
+        <tr><td class="n">34</td><td>Чт 17 дек</td><td>Настроение</td><td>04 Интерьер и жалюзи</td><td><span class="q">light through the blinds</span></td><td><span class="chip">Trial</span></td><td>Готов + хук</td></tr>
+        <tr><td class="n">35</td><td>Пт 18 дек</td><td>Продукт</td><td>36 Пуховики</td><td><span class="q">warm, for once</span></td><td><span class="chip fill">Лента</span></td><td class="red">Нужна съёмка</td></tr>
+        <tr><td class="n">36</td><td>Сб 19 дек</td><td>Настроение</td><td>20 Последний день лета</td><td><span class="q">the last day of summer</span></td><td><span class="chip">Trial</span></td><td>Готов + хук</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<!-- 10 PRODUCTION -->
+<section id="production" data-ch="10 — Производство">
+  <div class="wrap stack">
+    <div class="eyebrow rv">10 <span>Производство</span></div>
+    <h2 class="rv">105 из архива, 45 с новой съёмки</h2>
+    <div class="row two rv">
+      <figure><img src="img/r05.jpg" width="720" height="1280" alt="Плёнка Kodak, камеры и объективы на столе"><figcaption>Ткань и ремесло</figcaption></figure>
+      <figure><img src="img/r06.jpg" width="720" height="1280" alt="Чёрно-белый крупный план девушки в прозрачных очках"><figcaption>Портретная сессия</figcaption></figure>
+    </div>
+    <div class="tscroll rv"><table>
+      <thead><tr><th>Источник</th><th>Роликов</th><th>Что делаем</th></tr></thead>
+      <tbody>
+        <tr><td>Уже смонтировано (REELS, REELS_Vi2)</td><td class="n">21</td><td>Добавляем титр-хук и выпускаем</td></tr>
+        <tr><td>Неиспользованные клипы архива (около 90)</td><td class="n">30</td><td>Оранжерея, гостиная, бассейн с цветами, мужские образы</td></tr>
+        <tr><td>Те же сцены в другом формате</td><td class="n">40</td><td>«Как носить», «Ткань», серии по одной вещи, вторые версии хука</td></tr>
+        <tr><td>Другие папки бренда: кампании, лукбук 2025, VIDEO SOFIJA</td><td class="n">14</td><td>Нужно посмотреть, что там есть и можно ли брать</td></tr>
+        <tr><td>Новая съёмка, 3–4 полудня</td><td class="n">45</td><td>Костюмы и куртки, зипы, пуховики, Signature и карточка, ателье, основатели</td></tr>
+        <tr><td><b>Итого</b></td><td class="n">150</td><td></td></tr>
+      </tbody>
+    </table></div>
+    <h3 class="rv">Что снять — тем же камкордером</h3>
+    <ul class="checks rv">
+      <li>Крупно ткани 74mt и 45mt, пуговицы, швы, бирки — по 10–15 с на каждую деталь</li>
+      <li>Signature-рубашка и карточка подлинности с номером: руки достают из коробки, крупно номер</li>
+      <li>Каждый новый товар на 2–3 людях разного возраста и фигуры: проходка, крупно лицо, деталь</li>
+      <li>Ателье или стол закройщика: руки, ножницы, рулон ткани</li>
+      <li>Основатели: 6–8 коротких ответов на вопросы на камеру или только голосом</li>
+      <li>Звук съёмок живьём: реплики режиссёра и моделей — основа рубрики «Закулисье»</li>
+    </ul>
+    <p class="small rv">Монтаж партиями по 10 роликов за 2 недели до выхода; в запасе всегда готовые ролики на 2 недели вперёд.</p>
+  </div>
+</section>
+
+<!-- 11 ANALYTICS -->
+<section id="analytics" data-ch="11 — Аналитика">
+  <div class="wrap stack">
+    <div class="eyebrow rv">11 <span>Аналитика и правила решений</span></div>
+    <h2 class="rv">Каждое воскресенье — цифры, каждые 4 недели — разбор</h2>
+    <p class="rv">Цифры ролика смотрим через 7 дней после выхода, отдельно для Instagram и TikTok: охват, досмотр до 3-й секунды, средний процент просмотра, пересылки, сохранения, подписки, визиты профиля, Direct. Плюс признаки ролика: рубрика, тип хука, длина, время, лицо в первом кадре.</p>
+    <div class="tscroll rv"><table>
+      <thead><tr><th>Если</th><th>То</th></tr></thead>
+      <tbody>
+        <tr><td>До 3-й секунды досматривают меньше 50%</td><td>Меняем первый кадр и титр-хук, выпускаем повторно в Trial Reels</td></tr>
+        <tr><td>Хук держит, но средний просмотр меньше 40%</td><td>Ролик короче на 2–3 с, герой-кадр раньше</td></tr>
+        <tr><td>Пересылок или сохранений вдвое больше медианы</td><td>Ещё 2–3 ролика в том же формате, этот — в ленту</td></tr>
+        <tr><td>Рубрика 4 недели подряд в нижней трети</td><td>Забираем у неё 1 слот в неделю в пользу лидера</td></tr>
+        <tr><td>Ролик в TikTok сильнее, чем в Instagram (или наоборот)</td><td>Фиксируем формат за платформой, дальше они могут расходиться</td></tr>
+        <tr><td>Пришло сообщение от бутика или клиента</td><td>Записываем, с какого ролика; такие ролики — главный кандидат в ленту</td></tr>
+      </tbody>
+    </table></div>
+    <p class="small rv">Выгрузки статистики можно присылать мне — я посчитаю и предложу правки на следующие 4 недели.</p>
+  </div>
+</section>
+
+<!-- 12 QUESTIONS -->
+<section id="questions" data-ch="12 — Открытые вопросы">
+  <div class="wrap stack">
+    <div class="eyebrow rv">12 <span>Открытые вопросы</span></div>
+    <ul class="checks rv">
+      <li>Сколько сейчас подписчиков в Instagram и есть ли доступ к Trial Reels?</li>
+      <li>Есть ли аккаунт в TikTok и какое имя берём?</li>
+      <li>Где главная аудитория и в каком часовом поясе: Балтия, Украина, Средиземноморье?</li>
+      <li>Нужна ли русская или украинская версия подписей рядом с английской?</li>
+      <li>Куда ведёт ссылка в профиле: сайт <span class="keep">pplfrst.studio</span>, магазин, Direct?</li>
+      <li>Кто публикует ролики и отвечает на комментарии в первый час?</li>
+      <li>Когда снимаем осенние и зимние вещи, Signature и карточку — первый такой ролик в плане 27 ноября</li>
+      <li>Какие факты о тканях можно называть: фабрика, год, состав, тираж расцветки?</li>
+      <li>Есть ли права на голос диктора из VIDEO 1 и на лица всех моделей в публикациях?</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 13 SOURCES -->
+<section id="sources" data-ch="13 — Источники">
+  <div class="wrap stack">
+    <div class="eyebrow rv">13 <span>Источники</span></div>
+    <p class="small rv">Внутренние: годовой план People First 2026–2027, контент-план сентябрь–декабрь 2026, пресс-релиз. Внешние — в основном блоги маркетинговых сервисов; официальный источник только по Trial Reels. Поиск — 3 ноября 2026.</p>
+    <ul class="sources rv keep">
+      <li><a href="https://creators.instagram.com/blog/instagram-trial-reels">Instagram Creators — Trial reels</a></li>
+      <li><a href="https://www.dataslayer.ai/blog/instagram-algorithm-2025-complete-guide-for-marketers">Dataslayer — Instagram Algorithm 2026</a></li>
+      <li><a href="https://blckalpaca.at/en/knowledge-base/social-media/social-media-algorithms-distribution/instagram-algorithm-2026">Blckalpaca — Watch time and sends per reach</a></li>
+      <li><a href="https://postey.ai/blog/tiktok-algorithm-2026">Postey — TikTok Algorithm 2026, what's confirmed</a></li>
+      <li><a href="https://www.socialpilot.co/blog/tiktok-algorithm">SocialPilot — TikTok Algorithm 2026</a></li>
+      <li><a href="https://www.socialpilot.co/instagram-marketing/how-often-to-post-on-instagram">SocialPilot — How often to post on Instagram</a></li>
+      <li><a href="https://www.kontentino.com/blog/how-often-to-post-on-instagram/">Kontentino — How often to post on Instagram</a></li>
+      <li><a href="https://www.socialmediatoday.com/news/instagram-will-now-limit-the-reach-of-re-posts-from-tiktok-within-its-reels/594803">Social Media Today — Reach of reposts with TikTok watermark</a></li>
+      <li><a href="https://www.capcut.com/create/tiktok-caption-keywords-discoverability">CapCut — TikTok caption keywords and search</a></li>
+    </ul>
+  </div>
+</section>
+
+<div class="wrap end" data-ch="People First">
+  <div class="row rv">
+    <figure><img src="img/r03.jpg" width="720" height="1280" alt="Льняные брюки и босые ноги у деревянных качелей на траве"></figure>
+    <figure><img src="img/r02.jpg" width="720" height="1280" alt="Девушка в лиловой полосатой рубашке"></figure>
+    <figure><img src="img/r01.jpg" width="720" height="1280" alt="Женщина в тёмных очках и полосатой рубашке"></figure>
+  </div>
+  <p class="mark rv" style="padding-top:28px">People<br>First</p>
+  <footer><span>Reels strategy · v1</span><span>03.11.2026</span></footer>
+</div>
+
+</main>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  root.classList.add('js');
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els=[].slice.call(document.querySelectorAll('.rv'));
+  if(!reduce&&'IntersectionObserver' in window){
+    var vh=window.innerHeight||800;
+    els.forEach(function(el){ if(el.getBoundingClientRect().top>vh*0.92) el.classList.add('pre'); });
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.remove('pre'); io.unobserve(e.target);} });
+    },{rootMargin:'0px 0px -8% 0px',threshold:0.06});
+    els.forEach(function(el){ if(el.classList.contains('pre')) io.observe(el); });
+    setTimeout(function(){ els.forEach(function(el){ var r=el.getBoundingClientRect(); if(r.top<window.innerHeight) el.classList.remove('pre'); }); },2500);
+  }
+  var label=document.getElementById('chapter'), prog=document.getElementById('prog');
+  var secs=[].slice.call(document.querySelectorAll('[data-ch]'));
+  var ticking=false;
+  function update(){
+    ticking=false;
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    prog.style.transform='scaleX('+(h>0?Math.min(1,window.scrollY/h):0)+')';
+    var cur=secs[0];
+    for(var i=0;i<secs.length;i++){ if(secs[i].getBoundingClientRect().top<window.innerHeight*0.35) cur=secs[i]; }
+    var t=cur.getAttribute('data-ch');
+    if(label.textContent!==t){ label.textContent=t; }
+  }
+  window.addEventListener('scroll',function(){ if(!ticking){ ticking=true; requestAnimationFrame(update);} },{passive:true});
+  window.addEventListener('resize',update);
+  update();
+})();
+</script>
+
+</body>
+</html>
